@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced HTML5 elements and Forms</title>
+</head>
+<body>
+    <header>
+        <h1> HTML5-Week2_Assignment</h1>
+    </header>
+
+    <section>
+        <h2> Ordered List - High in demand Programming Languages</h2>
+        <ol type="i">
+            <li> Python </li>
+            <li> Javascript </li>
+            <li> Java </li>
+            <li> C </li>
+            <li> Ruby </li>
+        </ol>
+    </section>
+
+    <section>
+        <h2> Beautiful scenery from Pexels </h2>
+          <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg" alt="Beautiful Nature" width="500">
+    </section>
+
+    <section>
+        <h2> Contact List </h2>
+        <table border="1">
+            <thead>
+            <tr>
+                <th> Name </th>
+                <th> Address </th>
+                <th> Mobile Number </th>
+                <th> Email </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td> John Nyam </td>
+                <td> No 23 Kusaki Street,Gboko </td>
+                <td> +234 9023540535 </td>
+                <td> nyamjohn@yahoo.com </td>
+            </tr>
+            <tr>
+                <td> Saa-Aondo Wuese Mathias</td>
+                <td> No 9 Tyokever Aga Street, Katsina-Ala</td>
+                <td> +2347011029755 </td>
+                <td> mathiassaa88@gmail.com </td>
+            </tr>
+            <tr>
+                <td> Sandra Emannuel </td>
+                <td> No 2 Tyokyaa Titus Street, Katsina-Ala</td>
+                <td> +2348064545458</td>
+                <td> sandylove4real@gmail.com</td>
+            </tr>
+            <tr>
+                <td> Dorcas Mathias </td>
+                <td> No 9 Kur Baka Street, High Level Mkaurdi </td>
+                <td> +2348178089214 </td>
+                <td> dorky2024@gmail.com</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2> Registration Form </h2>
+        <form action="submit_form" method="POST">
+             <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter a secure password" required minlength="6"><br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required> <br><br>
+
+            <label for="country"> Select Your country: </label>
+            <select id="Country" name="country" required>
+                <option value=""> Choose ... </option>
+                <option value="Nigeria"> Nigeria </option>
+                <option value="usa">United States </option>
+                <option value="canada">Canada </option>
+                <option value="uk">United Kingdom</option>
+            </select>
+            <fieldset>
+                <legend>Gender:</legend>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </fieldset>
+            <fieldset>
+                <legend>Interests:</legend>
+                <input type="checkbox" id="sports" name="interests" value="sports">
+                <label for="sports">Sports</label>
+
+                <input type="checkbox" id="music" name="interests" value="music">
+                <label for="music">Music</label>
+
+                <input type="checkbox" id="reading" name="interests" value="reading">
+                <label for="reading">Reading</label>
+            </fieldset>
+        <button type="submit"> Register</button>
+        </form>
+    </section>
+</body>
+</html>
